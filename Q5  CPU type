@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<ctype.h>
+#include<stdlib.h>
+int main(int argc, char *argv[]) 
+{
+system("echo");
+system("echo The CPU Model");
+system("cat/proc/Cpu info/grep -m1 Cpu/cut -c 13-15");
+system("echo The CPU Model");
+system("cat/proc/CPU info/grep -m1 'Model Name");
+system("echo");
+system("echo The Kernel Version");
+system("cat/proc/sys/kernel/os-release");
+return 0
+}
