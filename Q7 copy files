@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<fcntl.h>
+#include<unistd.h>
+#include<sys/stat.h>
+void main()
+{     char source[10];
+      char destination[10];
+      int s;
+      int d;
+      int c=0;
+      char temp[50];
+      printf("enter the name of source file");
+     scanf("%s",source);
+     printf("enter the name of destination file");
+     scanf("%s",destination);
+     s=open(source,0);
+     if(s==-1){
+             printf("file open error!!!!!!");
+               exit(0);
+                 }
+     d=open(destination,1);
+     if(d==-1)
+"copy2.c" 156 lines,1437 bytes
